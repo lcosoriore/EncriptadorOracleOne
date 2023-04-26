@@ -1,0 +1,107 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b2c2ff;
+}
+
+.left h1 {
+    margin-bottom: 20px;
+}
+
+.left label, .left textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.left textarea {
+    height: 150px;
+}
+
+.left .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.left button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #547bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.left button:hover {
+    background-color: #3655c1;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+}
+
+.right label, .right textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.right textarea {
+    height: 150px;
+}
+
+.right .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.right button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #547bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.right button:hover {
+    background-color: #3655c1;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .container > div {
+      flex: 0 0 100%;
+    }
+}
